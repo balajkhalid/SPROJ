@@ -158,8 +158,8 @@ class ActionCheckSymptom(Action):
         checksymp = "None"
         distype = tracker.get_slot("disaster_type")
         checksymp = tracker.get_slot("symptom")
-        getsymptomsfromdatabase = ["fever", "fatigue", "cough"]
-        if checksymp in getsymptomsfromdatabase:
+        getsymptoms = ["fever", "chills", "cough", "shortness of breath", "difficulty breathing", "fatigue", "muscle ache", "body ache", "headache", "loss of taste", "loss of smell", "sore throat", "congestion", "runny nose", "nausea", "vomiting", "diarrhea", "breathing problems"]
+        if checksymp in getsymptoms:
             response = "Yes, " + checksymp + " is a symptom of " + distype + \
                 "\nOther symtoms include blah blah\nIf you have more of these symptoms, please consult a doctor to recieve a certain diagnosis. \nWould you like me to find a hospital for you?"
         else:
