@@ -100,10 +100,6 @@ stories:
   - intent: ask_cases
     entities:
     - disaster_type: "corona"
-  - action: utter_ask_location
-  - intent: provide_location
-    entities:
-    - location: "Islamabad"
   - action: action_findcases
 
  
@@ -135,10 +131,6 @@ stories:
   - intent: ask_cases
     entities:
     - disaster_type: "corona"
-  - action: utter_ask_location
-  - intent: provide_location
-    entities:
-    - location: "Islamabad"
   - action: action_findcases
   - action: utter_anything_else
  
