@@ -202,8 +202,6 @@ class ActionFindTest(Action):
         response = "If you want to get tested for "+distype + \
             " the following tests are available for you:\nRT-PCR\nAntigen test\nAntibody test"
         dispatcher.utter_message(text=response)
-        dispatcher.utter_message(image="https://imgur.com/a/q0TeP63")
-
         return[]
 
 
@@ -220,6 +218,7 @@ class ActionFindAccuracy(Action):
 
         response = "The accuracy of medical tests can vary depending upon the testing environment and equipment; but generally the accuracy of the " + testtype+" is: "
         dispatcher.utter_message(text=response)
+        dispatcher.utter_message(image="https://imgur.com/a/q0TeP63")
 
         return[]
 
